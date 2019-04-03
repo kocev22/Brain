@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vezhba 03 (reservation)</title>
+        <meta>
+    </head>
+    <body>
+        <h1>Reserving a Room at Red Abbey Resort</h1>
+        
+        <h2>Rooms and Prices</h2>
+        <table border="2" cellpadding="3" cellspacing="3">
+            <caption align="center">Our Guest Rooms</caption>
+            <tr >
+                <td >Room type</td>
+                <td>Maximum Occupancy</td>
+                <td>Average Price Per Night</td>
+
+            </tr>
+            <tr  >
+                <td >Attic Room</td>
+                <td>1</td>
+                <td>100$</td>
+
+            </tr>
+            <tr>
+                <td>Standard Room</td>
+                <td>2</td>
+                <td>170$</td>
+
+
+            </tr>
+            <tr>
+                <td>Garden View Suite</td>
+                <td>4</td>
+                <td>220$</td>
+            </tr>
+        </table>
+        <div>
+           <h3>Submit a Reservation Reguest</h3>
+        <form action="submit.php">
+           <label for="firstName">First Name</label>
+            <input id="firstName" type="text" required>
+           <br>
+           <br>
+           <label for="lastName">Last Name</label>
+            <input id="lastName" type="text" required>
+           <br>
+           <br>
+           <label for="phone">Phone Number</label>
+            <input id="phone" type="number">
+           <br>
+           <br>
+           <label for="email">Email</label>
+            <input id="email" type="email">
+        
+        </div>
+        <br>
+        <div>
+            <fieldset>
+                <legend>Preferred room type:</legend>
+                <input id="atticRoom" type="radio" name="radiocheck">
+                <label for="atticRoom">Attic Room</label>
+                <input id="standardRoom" type="radio" name="radiocheck">
+                <label for="standardRoom">Standard Room</label>
+                <input id="gardenViewSuite" type="radio" name="radiocheck">
+                <label for="gardenViewSuite">Garden View Suite</label>
+            </fieldset>
+        </div>
+        <br>
+        <div>
+            <label for="checkIn">Check In:</label>
+            <input id="checkIn" type="date">
+            <br>
+            <br>
+            <label for="checkOut">Check Out:</label>
+            <input id="checkOut" type="date">
+            <br>
+            <br>
+            <label for="message">Comment or Special Requests</label>
+            <br>
+            <textarea id="message" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <br>
+        <button type="submit">Submit Request</button>
+        </form>
+        <h5>Reservations must be made <i>at least</i> 30 days in advance.</h5>
+    
+        <a href="C:\Users\Nikola\Desktop\BRAINster\vezhba 03.html" target="_blank">Return to Home Page</a>
+    </body>
+</html>
